@@ -81,7 +81,7 @@ export default function ExpenseList({
   return (
     <div className="space-y-5 mt-10">
       <h1 className="text-2xl font-bold text-white">Expense List</h1>
-      <div className="rounded-2xl border border-emerald-500/20 bg-gradient-to-r from-emerald-500/20 to-emerald-600/10 p-5 shadow-lg backdrop-blur">
+      <div className="rounded-2xl border border-emerald-500/20 bg-linear-to-r from-emerald-500/20 to-emerald-600/10 p-5 shadow-lg backdrop-blur">
         <p className="text-sm text-slate-300">
           Total Spending
         </p>
@@ -107,6 +107,9 @@ export default function ExpenseList({
 
             <p className="mt-2 text-xl font-bold text-emerald-400">
               Rs. {expense.amount}
+            </p>
+             <p className="mt-2 text-xl font-bold text-black bg-white px-4 py-2 rounded-md">
+               {expense.notes}
             </p>
           </div>
 
